@@ -906,10 +906,6 @@ The reComputer Industrial R2000 features 2x native HDMI interface from CM5, supp
 <div style={{textAlign:'left'}}><img src="https://files.seeedstudio.com/wiki/reComputer-AI-Industrial/R2000/2.2.16_rtc_1.png" style={{width:200, height:'auto'}}/></div>
 The reComputer Industrial R2000 features an RTC circuit that powered by the capacitor, enabling it to maintain timekeeping functionality even in the event of power loss.
 
-:::note
-When using the RTC, if the device suddenly loses power, you need to wait until the RTC is fully discharged before reconnecting power and restarting. If it is not fully discharged, the device may fail to meet the restart condition and may not start up properly.
-:::
-
 ### Watchdog
 
 The reComputer Industrial R2000 comes equipped with an independent hardware watchdog circuit that ensures automatic system reboot in case of abnormal system crashes. The watchdog circuit is implemented through RTC and allows for flexible feeding times from 1 to 255 seconds.
@@ -1094,13 +1090,19 @@ The TPM features Infineon’s OPTIGA™ TPM SLB9670 which is compliant to the Tr
 The UPS is 7F, which operates in series. The UPS module is positioned between the DC5V and CM5 components, with a GPIO signal utilized to alert the CPU in the event of a power loss from the 5V supply. Upon receiving this signal, the CPU executes an urgent script before the super capacitor's energy is depleted, initiating a "$ shutdown" command.
 The backup duration provided by the UPS heavily relies on the system load. Below are some typical scenarios tested with a CM5 module featuring 4GB RAM, 32GB eMMC storage, and a Wi-Fi module.
 
+For UPS function please contact us for more information, and the alarm signal is active LOW.
+
 | **Mode of Operation** | **Time(s)**  | **Remark**          |
 |-----------------------|------------------------------|---------------------|
 | Idle                  | 15           | Testing under idle conditions with official driver program loaded  |
 | Full load of CPU      | 6            | stress -c 4 -t 10m -v &       |
 
 :::note
-For UPS function please contact us for more information, and the alarm signal is active LOW.
+When using a UPS, if the device suddenly loses power, you need to wait until the UPS is fully discharged, or reconnect the power before the UPS sends the shutdown command. Otherwise, there is a chance that the device will fail to restart. The approximate reason is: 
+
+when the UPS sends the shutdown signal and the device is in the process of shutting down, if power is reconnected before the UPS is fully discharged, the device may fail to reset the power-on command because it has not shut down completely (the voltage has not dropped to a sufficient level), resulting in the device being unable to power on. In this case, you must cut the power again, wait for the device to shut down completely, and then restart it.
+
+This is a safety-use logic setting of the device itself, and is not a problem caused by device damage or defects. If you have installed a UPS module, please pay attention to using the device in accordance with the proper operating instructions.
 :::
 
 ## Additional Resources
