@@ -11,7 +11,7 @@ last_update:
   date: 02/14/2023
   author: Matthew
 createdAt: '2025-08-07'
-updatedAt: '2026-03-04'
+updatedAt: '2026-08-04'
 url: https://wiki.seeedstudio.com/cn/sensecraft-blockchain/sensecraft-hotspot-app/faq/
 ---
 
@@ -30,7 +30,7 @@ url: https://wiki.seeedstudio.com/cn/sensecraft-blockchain/sensecraft-hotspot-ap
 **我可以通过 SenseCAP Hotspot App 将 SenseCAP MX 热点设备添加到我的 Helium 钱包吗？**
 =====================================================================================
 
-这可以通过最新版本的 [**SenseCAP App**](https://www.sensecapmx.com/docs/sesnecap-hotspot-app/download-app/) 来完成。
+这可以通过最新版本的 [**SenseCAP Hotspot App**](https://www.sensecapmx.com/docs/sesnecap-hotspot-app/download-app/) 来完成。
 
 **我可以在 SenseCAP Hotspot App 上管理其他制造商的热点设备吗？**
 ===============================================================

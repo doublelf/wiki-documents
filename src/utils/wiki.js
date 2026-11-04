@@ -1,134 +1,134 @@
 const docList = [
   [
     {
-      "path": "/control_rebot_arm_using_voice_with_respeaker_flex",
-      "image": "https://files.seeedstudio.com/wiki/reSpeaker_flex/reSpeakerFlexXVF3800Circular-4.jpg",
-      "title": "Control reBot Arm using voice with reSpeaker Flex",
-      "date": "2026-05-22",
-      "title_cn": "使用 reSpeaker Flex 通过语音控制 reBot Arm",
-      "title_ja": "reSpeaker Flex を使って音声で reBot Arm を制御する",
-      "title_es": "Controlar reBot Arm usando la voz con reSpeaker Flex",
-      "title_pt": "Controle o reBot Arm usando voz com o reSpeaker Flex"
+      "path": "/recamera_pro_visual_wake_stt",
+      "image": "https://files.seeedstudio.com/wiki/reCamera-Pro/Application/recamera_pro_visual_wake_stt/gpt_images.png",
+      "title": "Build a Visual Wake and Offline Speech Recognition System with reCamera Pro",
+      "date": "2026-08-24",
+      "title_cn": "使用 reCamera Pro 构建视觉唤醒与离线语音识别系统",
+      "title_ja": "reCamera Pro でビジュアルウェイク & オフライン音声認識システムを構築する",
+      "title_es": "Crea un sistema de activación visual y reconocimiento de voz sin conexión con reCamera Pro",
+      "title_pt": "Crie um sistema de despertar visual e reconhecimento de fala offline com reCamera Pro"
     },
     {
-      "path": "/atom_s",
-      "image": "https://files.seeedstudio.com/wiki/robotics/projects/humanoid/atom-s/product_photo.webp",
-      "title": "Getting started with Atom-S",
-      "date": "5/22/2026",
-      "title_cn": "Atom-S 入门指南",
-      "title_ja": "Atom-S 入門ガイド",
-      "title_es": "Primeros pasos con Atom-S",
-      "title_pt": "Introdução ao Atom-S"
+      "path": "/sensecap_combo_introduction",
+      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Combo/SenseCAP_Combo_5in1_4G.webp",
+      "title": "SenseCAP Combo 5-in-1 Sensor with 4G Introduction",
+      "date": "2026-08-23",
+      "title_cn": "SenseCAP Combo 5 合 1 传感器（带 4G）简介",
+      "title_ja": "SenseCAP Combo 5-in-1 Sensor with 4G 概要",
+      "title_es": "Introducción al sensor SenseCAP Combo 5 en 1 con 4G",
+      "title_pt": "Introdução ao Sensor SenseCAP Combo 5-em-1 com 4G"
     }
   ],
   [
     {
-      "path": "/atom_x",
-      "image": "https://files.seeedstudio.com/wiki/robotics/projects/humanoid/atom-x/atom_x_overview.webp",
-      "title": "Getting started with Atom-X",
-      "date": "5/22/2026",
-      "title_cn": "Atom-X 入门指南",
-      "title_ja": "Atom-X 入門ガイド",
-      "title_es": "Primeros pasos con Atom-X",
-      "title_pt": "Introdução ao uso do Atom-X"
+      "path": "/respeaker_xvf_3800_i2c_list",
+      "image": "https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/front-xiao.webp",
+      "title": "Using I2C Commands to Control reSpeaker XVF3800 USB Mic Array with XIAO ESP32S3",
+      "date": "2026-08-21",
+      "title_cn": "使用 I2C 命令通过 XIAO ESP32S3 控制 reSpeaker XVF3800 USB Mic Array",
+      "title_ja": "I2C コマンドを使用して XIAO ESP32S3 で reSpeaker XVF3800 USB Mic Array を制御する",
+      "title_es": "Uso de comandos I2C para controlar la reSpeaker XVF3800 USB Mic Array con XIAO ESP32S3",
+      "title_pt": "Usando comandos I2C para controlar o reSpeaker XVF3800 USB Mic Array com XIAO ESP32S3"
     },
     {
-      "path": "/respeaker_flex_soarm",
-      "image": "https://files.seeedstudio.com/wiki/reSpeaker_flex/lerobot_flex.png",
-      "title": "Add Voice Interaction to Your SO-ARM10x with reSpeaker Flex",
-      "date": "2026-05-19",
-      "title_cn": "使用 reSpeaker Flex 为你的 SO-ARM10x 添加语音交互",
-      "title_ja": "reSpeaker Flex で SO-ARM10x に音声インタラクションを追加する",
-      "title_es": "Añade interacción por voz a tu SO-ARM10x con reSpeaker Flex",
-      "title_pt": "Adicione Interação por Voz ao Seu SO-ARM10x com reSpeaker Flex"
+      "path": "/recamera_jetson_vlm_gateway",
+      "image": "https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp",
+      "title": "Build a reCamera and NVIDIA Jetson VLM Event Gateway",
+      "date": "2026-08-20",
+      "title_cn": "构建 reCamera 与 NVIDIA Jetson VLM 事件网关",
+      "title_ja": "reCamera と NVIDIA Jetson で VLM イベントゲートウェイを構築する",
+      "title_es": "Crea una pasarela de eventos VLM con reCamera y NVIDIA Jetson",
+      "title_pt": "Criar um Gateway de Eventos VLM com reCamera e NVIDIA Jetson"
     }
   ],
   [
     {
-      "path": "/control_rebot_arm_with_nemoclaw_on_nvidia_jetson_thor",
-      "image": "https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/i/m/img_v3_0210p_67d75fe6-a1fe-40a9-b025-ac92efb1bbbg_1.jpg",
-      "title": "Control reBot Arm B601 with NemoClaw on Nvidia Jetson Thor",
-      "date": "2026-05-18",
-      "title_cn": "在 Nvidia Jetson Thor 上使用 NemoClaw 控制 reBot Arm B601",
-      "title_ja": "Nvidia Jetson Thor 上の NemoClaw で reBot Arm B601 を制御する",
-      "title_es": "Controlar reBot Arm B601 con NemoClaw en Nvidia Jetson Thor",
-      "title_pt": "Controlar o reBot Arm B601 com NemoClaw no Nvidia Jetson Thor"
+      "path": "/jetson_fisheye_surround_view_demo",
+      "image": "https://files.seeedstudio.com/wiki/Thor/jetson_fisheye_surround_view_demo_01.gif",
+      "title": "Build a Four-Camera Fisheye Surround View Demo on Jetson AGX Thor",
+      "date": "2026-08-18",
+      "title_cn": "在 Jetson AGX Thor 上构建四摄像头鱼眼环视演示",
+      "title_ja": "Jetson AGX Thor 上で 4 台の魚眼カメラによるサラウンドビュー デモを構築する",
+      "title_es": "Crea una demo de vista envolvente con ojo de pez y cuatro cámaras en Jetson AGX Thor",
+      "title_pt": "Crie uma Demonstração de Visão Surround com Quatro Câmeras Olho de Peixe no Jetson AGX Thor"
     },
     {
-      "path": "/reterminal_e10xx_with_arduino_peripherals",
-      "image": "https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.webp",
-      "title": "Arduino Cookbook: Onboard Peripherals (reTerminal E Series)",
-      "date": "2026-05-15",
-      "title_cn": "Arduino 菜谱：板载外设（reTerminal E 系列）",
-      "title_ja": "Arduino クックブック: オンボードペリフェラル (reTerminal E シリーズ)",
-      "title_es": "Recetario de Arduino: Periféricos Integrados (reTerminal E Serie)",
-      "title_pt": "Livro de Receitas Arduino: Periféricos Onboard (reTerminal E Série)"
+      "path": "/recamera_deploy_monocular_depth",
+      "image": "https://files.seeedstudio.com/wiki/solution/recamera/recamera-fastdepth-indoor-office-result.png",
+      "title": "Deploy Monocular Depth Estimation on reCamera (FastDepth, INT8)",
+      "date": "2026-08-18",
+      "title_cn": "在 reCamera 上部署单目深度估计（FastDepth，INT8）",
+      "title_ja": "reCamera で単眼深度推定をデプロイする (FastDepth, INT8)",
+      "title_es": "Desplegar Estimación de Profundidad Monocular en reCamera (FastDepth, INT8)",
+      "title_pt": "Implantar Estimação de Profundidade Monocular na reCamera (FastDepth, INT8)"
     }
   ],
   [
     {
-      "path": "/recamera_udp_face_analysis",
-      "image": "https://files.seeedstudio.com/wiki/reCamera/recamera-udp-face-show.gif",
-      "title": "UDP Face Analysis with reCamera",
-      "date": "2026-04-30",
-      "title_cn": "使用 reCamera 进行 UDP 人脸分析",
-      "title_ja": "reCamera を用いた UDP 顔解析",
-      "title_es": "Análisis de Rostros por UDP con reCamera",
-      "title_pt": "Análise de Rosto via UDP com reCamera"
+      "path": "/install_ubuntu_on_sensecap_m4",
+      "image": "https://www.sensecapmx.com/wp-content/uploads/2022/12/Pasted-into-Overview.png",
+      "title": "Install Ubuntu on SenseCAP M4 via USB",
+      "date": "2026-08-18",
+      "title_cn": "通过 USB 在 SenseCAP M4 上安装 Ubuntu",
+      "title_ja": "USB 経由で SenseCAP M4 に Ubuntu をインストールする",
+      "title_es": "Instalar Ubuntu en SenseCAP M4 vía USB",
+      "title_pt": "Instalar o Ubuntu no SenseCAP M4 via USB"
     },
     {
-      "path": "/respeaker_flex_lekiwi",
-      "image": "https://files.seeedstudio.com/wiki/reSpeaker_flex/banner_javis.png",
-      "title": "Add Voice Interaction to Your LeKiwi Robot with reSpeaker Flex",
-      "date": "2026-04-28",
-      "title_cn": "使用 reSpeaker Flex 为你的 LeKiwi 机器人添加语音交互",
-      "title_ja": "reSpeaker Flex で LeKiwi ロボットに音声インタラクションを追加",
-      "title_es": "Añade interacción por voz a tu robot LeKiwi con reSpeaker Flex",
-      "title_pt": "Adicione interação por voz ao seu robô LeKiwi com o reSpeaker Flex"
+      "path": "/rebot_arm_b601_dm_isaacsim",
+      "image": "https://files.seeedstudio.com/wiki/robotics/projects/rebot_arm/rebot_dm_isaacsim.png",
+      "title": "Simulating reBot-B601-DM with Isaac Sim",
+      "date": "2026-08-17T00:00:00.000Z",
+      "title_cn": "通过 Isaacsim 仿真 reBot-B601-DM",
+      "title_ja": "Isaac Sim を使用した reBot-B601-DM のシミュレーション",
+      "title_es": "Simulación de reBot-B601-DM con Isaac Sim",
+      "title_pt": "Simulando o reBot-B601-DM com Isaac Sim"
     }
   ],
   [
     {
-      "path": "/xiao_esp32c5_with_zephyr",
-      "image": "https://files.seeedstudio.com/wiki/XIAO_ESP32C5/Getting_started/Seeed-Studio-XIAO-ESP32C5_1.webp",
-      "title": "XIAO ESP32-C5 With Zephyr(RTOS)",
-      "date": "2026-04-28",
-      "title_cn": "XIAO ESP32-C5 与 Zephyr(RTOS)",
-      "title_ja": "XIAO ESP32-C5 と Zephyr(RTOS)",
-      "title_es": "XIAO ESP32-C5 con Zephyr(RTOS)",
-      "title_pt": "XIAO ESP32-C5 com Zephyr(RTOS)"
+      "path": "/ai_robotics_recomputer_rugged_j401_hardware_and_interface_usage",
+      "image": "https://files.seeedstudio.com/wiki/rugged_J401/interface/1.png",
+      "title": "reComputer Rugged J401 Hardware and Interface Usage",
+      "date": "2026-08-14",
+      "title_cn": "reComputer Rugged J401 硬件与接口使用",
+      "title_ja": "reComputer Rugged J401 ハードウェアおよびインターフェースの使用方法",
+      "title_es": "Uso de hardware e interfaces de reComputer Rugged J401",
+      "title_pt": "Uso de Hardware e Interfaces do reComputer Rugged J401"
     },
     {
-      "path": "/get_started_with_meshcore_remote_terminal",
-      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Meshcore/remoteterminal/first.png",
-      "title": "Get Started with MeshCore Remote Terminal",
-      "date": "2026-04-20",
-      "title_cn": "MeshCore Remote Terminal 入门指南",
-      "title_ja": "MeshCore Remote Terminal を使い始める",
-      "title_es": "Primeros pasos con MeshCore Remote Terminal",
-      "title_pt": "Introdução ao MeshCore Remote Terminal"
+      "path": "/recamera_pro_development_cpp_skill",
+      "image": "https://files.seeedstudio.com/wiki/reCamera-Pro/Secondary_Development/cpp_skill/recamera_skill.png",
+      "title": "Develop reCamera Pro Applications with AI Coding Agents",
+      "date": "2026-08-14",
+      "title_cn": "使用 AI 编码代理开发 reCamera Pro 应用",
+      "title_ja": "AI コーディングエージェントで reCamera Pro アプリケーションを開発する",
+      "title_es": "Desarrolla aplicaciones reCamera Pro con agentes de programación con IA",
+      "title_pt": "Desenvolva aplicações reCamera Pro com agentes de codificação em IA"
     }
   ],
   [
     {
-      "path": "/get_started_with_esp32s3_meshcore",
-      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Meshcore/ESP32S3/ESP32S3Series.png",
-      "title": "Get Started with ESP32 MeshCore",
-      "date": "2026-04-20",
-      "title_cn": "ESP32 MeshCore 入门",
-      "title_ja": "ESP32 MeshCore を使い始める",
-      "title_es": "Primeros pasos con ESP32 MeshCore",
-      "title_pt": "Primeiros Passos com ESP32 MeshCore"
+      "path": "/rebot_arm_b601_rs_web_simulator_developer_guide",
+      "image": "https://files.seeedstudio.com/wiki/robotics/projects/rebot_arm/rebot_web_rs/rebot_rs_web_simulator_en.png",
+      "title": "reBot Arm B601-RS Web Simulator and ROS 2/MuJoCo Developer Guide",
+      "date": "2026-08-13",
+      "title_cn": "reBot Arm B601-RS Web 仿真器与 ROS 2/MuJoCo 开发者教程",
+      "title_ja": "reBot Arm B601-RS Web シミュレータおよび ROS 2/MuJoCo 開発者ガイド",
+      "title_es": "Guía para Desarrolladores del Simulador Web de reBot Arm B601-RS y ROS 2/MuJoCo",
+      "title_pt": "Guia de Desenvolvimento do Simulador Web e ROS 2/MuJoCo do reBot Arm B601-RS"
     },
     {
-      "path": "/sound_source_localization_of_recamera_gimbal",
-      "image": "https://files.seeedstudio.com/wiki/reCamera/Applications/reCamera_reSpeaker/reCamera_reSpeaker.gif",
-      "title": "Sound source localization of reCamera Gimbal",
-      "date": "2026-04-17",
-      "title_cn": "reCamera Gimbal 的声源定位",
-      "title_ja": "reCamera Gimbal の音源定位",
-      "title_es": "Localización de fuentes de sonido con reCamera Gimbal",
-      "title_pt": "Localização de fonte sonora do reCamera Gimbal"
+      "path": "/respeaker_clip_service_integration",
+      "image": "https://files.seeedstudio.com/wiki/reSpeaker_Clip/clip-banner.jpg",
+      "title": "Integrate reSpeaker Clip into Your Service",
+      "date": "2026-08-07",
+      "title_cn": "将 reSpeaker Clip 集成到你的服务中",
+      "title_ja": "reSpeaker Clip をサービスに統合する",
+      "title_es": "Integra reSpeaker Clip en tu servicio",
+      "title_pt": "Integre o reSpeaker Clip ao Seu Serviço"
     }
   ]
 ];

@@ -129,6 +129,16 @@ const content = {
       "Connect the board to the Ubuntu host PC with a USB Type-C data transmission cable.",
     powerUpFirst: "Power up the carrier board by connecting the power cable.",
     releaseForceCovery: "Release the force recovery button.",
+    classicJ501ConnectRecoveryUsb: "Connect the dedicated recovery USB Type-C port to the Ubuntu host PC.",
+    classicJ501PressRecovery: "Press and hold the recovery button.",
+    j501MiniHoldReset: "Keep pressing button to the RESET mode.",
+    maxnWarningIntro: "If you are using an Orin NX 16GB/8GB module,",
+    maxnWarningAction: "do not enable MAXN SUPER mode",
+    maxnWarningBody: "The cooling capacity of the reComputer J401 carrier board is insufficient to support it, and forcing this mode may result in permanent damage to the module.",
+    classicJ501RecoveryAlt: "reComputer Classic J501 recovery button and USB port",
+    j501ForceRecoveryVideoTitle: "J501 Enter Force Recovery Mode",
+    flashPortAlt: "Flash Port",
+    usbConnectionAlt: "USB Connection",
 
     // Device detection
     deviceNotDetected: "If the device is not detected, try the following:",
@@ -178,6 +188,8 @@ const content = {
     hostRecommendationTable: "Please refer to the table below to prepare the host machine.",
     jetpackVersion: "JetPack Version",
     ubuntuVersion: "Ubuntu Version (Host Computer)",
+    hostJetpack72Note:
+      "For JetPack 7.2, Ubuntu 24.04 is supported for flashing and target-side component installation only. Use Ubuntu 20.04 or 22.04 if you need host development components.",
 
     // Button headers
     buttonHeader: "Button Header",
@@ -261,6 +273,16 @@ const content = {
     connectUsbFirst: "先用 USB Type-C 数据线将载板连接到 Ubuntu 主机。",
     powerUpFirst: "再连接电源线，为载板上电。",
     releaseForceCovery: "松开强制恢复按钮。",
+    classicJ501ConnectRecoveryUsb: "使用专用的恢复 USB Type-C 接口将设备连接到 Ubuntu 主机。",
+    classicJ501PressRecovery: "按住 Recovery 恢复按钮。",
+    j501MiniHoldReset: "持续按住按钮，使设备进入 RESET 模式。",
+    maxnWarningIntro: "如果您使用的是 Orin NX 16GB/8GB 模块，",
+    maxnWarningAction: "请不要启用 MAXN SUPER 模式",
+    maxnWarningBody: "reComputer J401 载板的散热能力不足以支持该模式，强制启用可能导致模块永久损坏。",
+    classicJ501RecoveryAlt: "reComputer Classic J501 恢复按钮和 USB 接口",
+    j501ForceRecoveryVideoTitle: "J501 进入强制恢复模式",
+    flashPortAlt: "刷写接口",
+    usbConnectionAlt: "USB 连接",
 
     // Device detection
     deviceNotDetected: "若未检测到设备，请尝试：",
@@ -304,6 +326,8 @@ const content = {
     hostRecommendationTable: "请参考下表准备主机环境：",
     jetpackVersion: "JetPack 版本",
     ubuntuVersion: "Ubuntu 版本（主机）",
+    hostJetpack72Note:
+      "对于 JetPack 7.2，Ubuntu 24.04 仅支持刷写和目标端组件安装；如果需要主机开发组件，请使用 Ubuntu 20.04 或 22.04。",
 
     // Button headers
     buttonHeader: "按键/引脚",
@@ -384,6 +408,16 @@ const content = {
       "まず USB Type-C ケーブルでボードを Ubuntu ホスト PC に接続します。",
     powerUpFirst: "次に電源ケーブルを接続してキャリアボードを起動します。",
     releaseForceCovery: "強制リカバリボタンを離します。",
+    classicJ501ConnectRecoveryUsb: "専用のリカバリ用 USB Type-C ポートを Ubuntu ホスト PC に接続します。",
+    classicJ501PressRecovery: "リカバリボタンを押し続けます。",
+    j501MiniHoldReset: "ボタンを押し続けて RESET モードにします。",
+    maxnWarningIntro: "Orin NX 16GB/8GB モジュールを使用している場合は、",
+    maxnWarningAction: "MAXN SUPER モードを有効にしないでください",
+    maxnWarningBody: "reComputer J401 キャリアボードの冷却能力ではこのモードを支えられず、強制するとモジュールが恒久的に損傷する可能性があります。",
+    classicJ501RecoveryAlt: "reComputer Classic J501 のリカバリボタンと USB ポート",
+    j501ForceRecoveryVideoTitle: "J501 を強制リカバリモードにする",
+    flashPortAlt: "フラッシュポート",
+    usbConnectionAlt: "USB 接続",
 
     deviceNotDetected: "デバイスが認識されない場合は次を試してください：",
     reconnectUsb: "USB ケーブルを挿し直します。",
@@ -429,6 +463,8 @@ const content = {
     hostRecommendationTable: "以下の表を参考にホスト環境を準備してください。",
     jetpackVersion: "JetPack バージョン",
     ubuntuVersion: "Ubuntu バージョン（ホスト）",
+    hostJetpack72Note:
+      "JetPack 7.2 では、Ubuntu 24.04 はフラッシュとターゲット側コンポーネントのインストールのみをサポートします。ホスト開発コンポーネントが必要な場合は Ubuntu 20.04 または 22.04 を使用してください。",
 
     buttonHeader: "ボタン/ピン",
     description: "説明",
@@ -510,6 +546,16 @@ const content = {
       "Primero conecte la placa al PC con Ubuntu con un cable de datos USB Type-C.",
     powerUpFirst: "Después, conecte la alimentación para encender la carrier board.",
     releaseForceCovery: "Suelte el botón de recuperación forzada.",
+    classicJ501ConnectRecoveryUsb: "Conecte el puerto USB Type-C dedicado para recuperación al PC anfitrión con Ubuntu.",
+    classicJ501PressRecovery: "Mantenga presionado el botón de recuperación.",
+    j501MiniHoldReset: "Mantenga presionado el botón para poner el dispositivo en modo RESET.",
+    maxnWarningIntro: "Si utiliza un módulo Orin NX 16GB/8GB,",
+    maxnWarningAction: "no active el modo MAXN SUPER",
+    maxnWarningBody: "La capacidad de refrigeración de la carrier board reComputer J401 es insuficiente para soportarlo y forzar este modo puede causar daños permanentes al módulo.",
+    classicJ501RecoveryAlt: "Botón de recuperación y puerto USB de reComputer Classic J501",
+    j501ForceRecoveryVideoTitle: "J501: entrar en modo de recuperación forzada",
+    flashPortAlt: "Puerto de flasheo",
+    usbConnectionAlt: "Conexión USB",
 
     deviceNotDetected: "Si el dispositivo no es detectado, pruebe:",
     reconnectUsb: "Reconectar el cable USB.",
@@ -559,6 +605,8 @@ const content = {
       "Consulte la siguiente tabla para preparar el equipo anfitrión.",
     jetpackVersion: "Versión de JetPack",
     ubuntuVersion: "Versión de Ubuntu (Host)",
+    hostJetpack72Note:
+      "Para JetPack 7.2, Ubuntu 24.04 solo es compatible con el flasheo y la instalación de componentes del dispositivo de destino. Use Ubuntu 20.04 o 22.04 si necesita componentes de desarrollo en el host.",
 
     buttonHeader: "Botón/Pin",
     description: "Descripción",
@@ -650,6 +698,16 @@ const content = {
       "Conecte primeiro a placa ao PC host Ubuntu com um cabo de dados USB Type-C.",
     powerUpFirst: "Ligue a carrier board conectando o cabo de alimentação.",
     releaseForceCovery: "Solte o botão de recuperação forçada.",
+    classicJ501ConnectRecoveryUsb: "Conecte a porta USB Type-C dedicada à recuperação ao PC host Ubuntu.",
+    classicJ501PressRecovery: "Pressione e mantenha pressionado o botão de recuperação.",
+    j501MiniHoldReset: "Mantenha o botão pressionado para colocar o dispositivo no modo RESET.",
+    maxnWarningIntro: "Se você estiver usando um módulo Orin NX 16GB/8GB,",
+    maxnWarningAction: "não ative o modo MAXN SUPER",
+    maxnWarningBody: "A capacidade de resfriamento da carrier board reComputer J401 é insuficiente para suportá-lo, e forçar esse modo pode resultar em danos permanentes ao módulo.",
+    classicJ501RecoveryAlt: "Botão de recuperação e porta USB do reComputer Classic J501",
+    j501ForceRecoveryVideoTitle: "J501: entrar no modo de recuperação forçada",
+    flashPortAlt: "Porta de gravação",
+    usbConnectionAlt: "Conexão USB",
 
     // Device detection
     deviceNotDetected: "Se o dispositivo não for detectado, tente o seguinte:",
@@ -705,6 +763,8 @@ const content = {
       "Consulte a tabela abaixo para preparar a máquina host.",
     jetpackVersion: "Versão do JetPack",
     ubuntuVersion: "Versão do Ubuntu (Computador host)",
+    hostJetpack72Note:
+      "Para JetPack 7.2, o Ubuntu 24.04 é compatível apenas com flashing e instalação de componentes no dispositivo de destino. Use Ubuntu 20.04 ou 22.04 se precisar de componentes de desenvolvimento no host.",
 
     // Button headers
     buttonHeader: "Botão / Pino",
@@ -892,16 +952,25 @@ export const PrepareRequirementsRobotics = ({ lang }) => {
   const product = useJetsonStore(state => state.product);
   const texts = useLocalizedTexts(lang);
 
-  const allowed = ['j4012robotics', 'j4011robotics', 'j3011robotics', 'j3010robotics'];
+  const carrierProducts = [
+    'j401-robotics-orin-nx-16g',
+    'j401-robotics-orin-nx-8g',
+    'j401-robotics-orin-nano-8g',
+    'j401-robotics-orin-nano-4g'
+  ];
+  const allowed = ['j4012robotics', 'j4011robotics', 'j3011robotics', 'j3010robotics', ...carrierProducts];
   if (!allowed.includes(product)) {
     return null;
   }
+  const deviceName = carrierProducts.includes(product)
+    ? 'J401-Robotics Carrier Board with NVIDIA Jetson Orin Nano/NX Module'
+    : `reComputer Robotics J4012 / J4011 / J3010 ${texts.or} J3011`;
 
   return (
     <div>
       <ul>
         <li>{texts.ubuntuHost}</li>
-        <li>reComputer Robotics J4012 / J4011 / J3010 {texts.or} J3011</li>
+        <li>{deviceName}</li>
         <li>{texts.usbTypeC}</li>
       </ul>
 
@@ -914,7 +983,16 @@ export const RecoveryRobotics = ({ lang }) => {
   const product = useJetsonStore(state => state.product);
   const texts = useLocalizedTexts(lang);
 
-  const allowed = ['j4012robotics', 'j4011robotics', 'j3011robotics', 'j3010robotics'];
+  const allowed = [
+    'j4012robotics',
+    'j4011robotics',
+    'j3011robotics',
+    'j3010robotics',
+    'j401-robotics-orin-nx-16g',
+    'j401-robotics-orin-nx-8g',
+    'j401-robotics-orin-nano-8g',
+    'j401-robotics-orin-nano-4g'
+  ];
   if (!allowed.includes(product)) {
     return null;
   }
@@ -1130,20 +1208,23 @@ export const PrepareRequirementsClassic = ({ lang }) => {
   const product = useJetsonStore(state => state.product);
   const texts = useLocalizedTexts(lang);
 
-  const allowed = ['j4012classic', 'j4011classic', 'j3011classic', 'j3010classic'];
+  const classicJ501Products = ['j5012classic', 'j5011classic'];
+  const allowed = ['j4012classic', 'j4011classic', 'j3011classic', 'j3010classic', ...classicJ501Products];
   if (!allowed.includes(product)) {
     return null;
   }
+
+  const isClassicJ501 = classicJ501Products.includes(product);
 
   return (
     <div>
       <ul>
         <li>{texts.ubuntuHost}</li>
-        <li>reComputer J4012 / J4011 / J3010 {texts.or} J3011</li>
+        <li>{isClassicJ501 ? 'reComputer Classic J5011 / J5012' : `reComputer J4012 / J4011 / J3010 ${texts.or} J3011`}</li>
         <li>{texts.usbTypeC}</li>
       </ul>
 
-      <HostEnvironmentNote lang={lang} />
+      {isClassicJ501 ? <HostEnvironmentNote1 lang={lang} /> : <HostEnvironmentNote lang={lang} />}
     </div>
   );
 };
@@ -1152,9 +1233,70 @@ export const RecoveryClassic = ({ lang }) => {
   const product = useJetsonStore(state => state.product);
   const texts = useLocalizedTexts(lang);
 
-  const allowed = ['j4012classic', 'j4011classic', 'j3011classic', 'j3010classic'];
+  const classicJ501Products = ['j5012classic', 'j5011classic'];
+  const allowed = ['j4012classic', 'j4011classic', 'j3011classic', 'j3010classic', ...classicJ501Products];
   if (!allowed.includes(product)) {
     return null;
+  }
+
+  if (classicJ501Products.includes(product)) {
+    return (
+      <div>
+        <div className="alert alert--info" role="alert" style={{ marginBottom: '1em' }}>
+          {texts.recoveryModeNoteNext}
+          <br />
+          {texts.recoveryModeClickStep}
+        </div>
+
+        <details style={{ marginBottom: '1em' }}>
+          <summary
+            style={{
+              cursor: 'pointer',
+              fontWeight: 'bold',
+              backgroundColor: 'var(--ifm-background-surface-color)',
+              padding: '0.6em 1em',
+              border: '1px solid #c3dafe',
+              borderRadius: '6px',
+              fontSize: '1.05em'
+            }}
+          >
+            {texts.stepByStep}
+          </summary>
+
+          <div style={{ textAlign: 'center', margin: '1em 0' }}>
+            <img
+              width={800}
+              src="https://files.seeedstudio.com/wiki/reComputer-Jetson/Classic_J501/hardware_recovery_button.png"
+              alt={texts.classicJ501RecoveryAlt}
+            />
+          </div>
+
+          <ul>
+            <li><strong>{texts.step1}</strong> {texts.classicJ501ConnectRecoveryUsb}</li>
+            <li><strong>{texts.step2}</strong> {texts.classicJ501PressRecovery}</li>
+            <li><strong>{texts.step3}</strong> {texts.connectPower}</li>
+            <li><strong>{texts.step4}</strong> {texts.releaseRecoveryHole}</li>
+            <li><strong>{texts.step5}</strong> {texts.runLsusb}</li>
+          </ul>
+        </details>
+
+        <p>{texts.afterRecoveryMode}</p>
+        <CodeBlock language="bash">lsusb</CodeBlock>
+
+        <ul>
+          <li>{texts.agxOrin32gb} <code>0955:7223</code> NVidia Corp</li>
+          <li>{texts.agxOrin64gb} <code>0955:7023</code> NVidia Corp</li>
+        </ul>
+
+        <div style={{ textAlign: 'center', margin: '1em 0' }}>
+          <img
+            width={800}
+            src="https://files.seeedstudio.com/wiki/reComputer-Jetson/Classic_J501/flash_lsusb_recovery.png"
+            alt={texts.lsusbResult}
+          />
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -1311,10 +1453,9 @@ export const RecoveryClassic = ({ lang }) => {
         role="alert"
         style={{ marginTop: '1em' }}
       >
-        If you are using an <strong>Orin NX 16GB/8GB</strong> module,
-        <strong> do not enable MAXN SUPER mode</strong>. <br />
-        The cooling capacity of the reComputer J401 carrier board is insufficient
-        to support it, and forcing this mode may result in permanent damage to the module.
+        {texts.maxnWarningIntro}{' '}
+        <strong>{texts.maxnWarningAction}</strong>. <br />
+        {texts.maxnWarningBody}
       </div>
     </div>
   );
@@ -1691,7 +1832,7 @@ export const RecoveryJ501 = ({ lang }) => {
             width="800"
             height="450"
             src="https://www.youtube.com/embed/CGMGZGqZPKM"
-            title="J501 Enter Force Recovery Mode"
+            title={texts.j501ForceRecoveryVideoTitle}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -1801,10 +1942,10 @@ export const RecoveryJ501Mini = ({ lang }) => {
 
         <ul>
           <li>
-            <strong>{texts.step1}</strong> Keep pressing button to the RESET mode.
+            <strong>{texts.step1}</strong> {texts.j501MiniHoldReset}
           </li>
           <li>
-            <strong>{texts.step2}</strong> Power up the carrier board by connecting the power cable, then release REC button.
+            <strong>{texts.step2}</strong> {texts.powerUpCarrier} {texts.releaseRecHole}
           </li>
           <li>
             <strong>{texts.step3}</strong> {texts.connectUsbc}
@@ -1815,7 +1956,7 @@ export const RecoveryJ501Mini = ({ lang }) => {
           <img
             width={600}
             src="https://files.seeedstudio.com/wiki/recomputer-j501-mini/flash-port.png"
-            alt="Flash Port"
+            alt={texts.flashPortAlt}
           />
         </div>
 
@@ -1898,22 +2039,22 @@ export const RecoveryJ501Robotics = ({ lang }) => {
           <img
             width={600}
             src="https://files.seeedstudio.com/wiki/recomputer_robotic_j501/flash_1.png"
-            alt="USB Connection"
+            alt={texts.usbConnectionAlt}
           />
         </div>
 
         <ul>
           <li>
-            <strong>{texts.step1}</strong> Connect a USB Type-C data transmission cable between USB2.0 DEVICE port and the Ubuntu host PC.
+            <strong>{texts.step1}</strong> {texts.connectUsbTypeC}
           </li>
           <li>
-            <strong>{texts.step2}</strong> Use a pin and insert into the RECOVERY hole to press recovery button and while holding this.
+            <strong>{texts.step2}</strong> {texts.insertRecoveryHole}
           </li>
           <li>
-            <strong>{texts.step3}</strong> Connect the power supply.
+            <strong>{texts.step3}</strong> {texts.connectPower}
           </li>
           <li>
-            <strong>{texts.step4}</strong> Release the recovery button.
+            <strong>{texts.step4}</strong> {texts.releaseRecoveryHole}
           </li>
           <li>
             <strong>{texts.step5}</strong> {texts.runLsusb}
@@ -2068,16 +2209,17 @@ const HostEnvironmentNote = ({ lang }) => {
       </div>
       <p></p>
       <div style={{ overflowX: 'auto', marginBottom: '1em' }}>
-        <table style={{ textAlign: 'center', width: '45%', borderCollapse: 'collapse' }} border={1}>
+        <table style={{ textAlign: 'center', width: '55%', borderCollapse: 'collapse' }} border={1}>
           <thead>
             <tr>
               <th rowSpan={2}>{texts.jetpackVersion}</th>
-              <th colSpan={3}>{texts.ubuntuVersion}</th>
+              <th colSpan={4}>{texts.ubuntuVersion}</th>
             </tr>
             <tr>
               <th>18.04</th>
               <th>20.04</th>
               <th>22.04</th>
+              <th>24.04</th>
             </tr>
           </thead>
           <tbody>
@@ -2086,16 +2228,26 @@ const HostEnvironmentNote = ({ lang }) => {
               <td>✅</td>
               <td>✅</td>
               <td></td>
+              <td></td>
             </tr>
             <tr>
               <td>JetPack 6.x</td>
               <td></td>
               <td>✅</td>
               <td>✅</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>JetPack 7.2</td>
+              <td></td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <p style={{ fontSize: '0.9em', marginTop: '-0.5em' }}>{texts.hostJetpack72Note}</p>
     </>
   );
 };
@@ -2113,16 +2265,17 @@ const HostEnvironmentNote1 = ({ lang }) => {
       </div>
       <p></p>
       <div style={{ overflowX: 'auto', marginBottom: '1em' }}>
-        <table style={{ textAlign: 'center', width: '45%', borderCollapse: 'collapse' }} border={1}>
+        <table style={{ textAlign: 'center', width: '55%', borderCollapse: 'collapse' }} border={1}>
           <thead>
             <tr>
               <th rowSpan={2}>{texts.jetpackVersion}</th>
-              <th colSpan={3}>{texts.ubuntuVersion}</th>
+              <th colSpan={4}>{texts.ubuntuVersion}</th>
             </tr>
             <tr>
               <th>18.04</th>
               <th>20.04</th>
               <th>22.04</th>
+              <th>24.04</th>
             </tr>
           </thead>
           <tbody>
@@ -2131,10 +2284,19 @@ const HostEnvironmentNote1 = ({ lang }) => {
               <td></td>
               <td>✅</td>
               <td>✅</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>JetPack 7.2</td>
+              <td></td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <p style={{ fontSize: '0.9em', marginTop: '-0.5em' }}>{texts.hostJetpack72Note}</p>
     </>
   );
 };

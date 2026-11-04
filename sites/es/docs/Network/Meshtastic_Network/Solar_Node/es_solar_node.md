@@ -8,10 +8,10 @@ image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/solar-node.webp
 slug: /meshtastic_solar_node
 sidebar_position: 1
 last_update:
-  date: 3/10/2026
-  author: Michelle Huang
+  date: 08/06/2026
+  author: zxw
 createdAt: '2025-04-08'
-updatedAt: '2026-03-10'
+updatedAt: '2026-08-07'
 url: https://wiki.seeedstudio.com/es/meshtastic_solar_node/
 ---
 
@@ -37,8 +37,8 @@ El nodo solar está disponible en dos variantes: [SenseCAP Solar Node P1](https:
 
 ### Características
 
-- Integrado con un panel solar de 5W y admite baterías externas (que deben ser proporcionadas por los propios usuarios).
-- El dispositivo viene con el firmware Meshtastic preinstalado de fábrica. Puede integrarse sin problemas en el ecosistema Meshtastic.
+- Integrado con un panel solar de 5 W y admite baterías externas (que deben ser proporcionadas por los propios usuarios).
+- El dispositivo viene con el firmware Meshtastic preinstalado de fábrica. Puede integrarse perfectamente en el ecosistema Meshtastic.
 - Compatible con el ecosistema Grove y admite la conexión plug-and-play de sensores como sensores de temperatura y humedad, sensores de luz, etc.
 - Es adecuado para uso prolongado en exteriores.
 - Admite transmisión de 8 a 9 KM en áreas abiertas. Puede utilizarse como nodo o repetidor exterior, ampliando fácilmente la red Mesh y mejorando la cobertura de la red.
@@ -122,7 +122,7 @@ El nodo solar está disponible en dos variantes: [SenseCAP Solar Node P1](https:
     <td>Luz indicadora de estado del panel solar *1</td>
   </tr>
   <tr>
-    <td>Luz de latido de Mesh *1</td>
+    <td>Luz de latido de la malla *1</td>
   </tr>
   <tr>
     <td>Definido por el usuario *1</td>
@@ -137,12 +137,12 @@ El nodo solar está disponible en dos variantes: [SenseCAP Solar Node P1](https:
   </tr>
   <tr>
     <td><b>Grado de impermeabilidad</b></td>
-    <td>IPX5</td>
+    <td>IPX6</td>
   </tr>
   <tr>
     <td><b>Batería (para la versión P1-Pro)</b></td>
     <td>
-      <p>- 4 baterías de litio 18650 (3350mAh cada una)</p>
+      <p>- 4 baterías de litio (NMC) 18650 (3350mAh cada una)</p>
       <p>- Compatible con carga por Type-C y solar.</p>
       <p>- Entorno de descarga: -40～60°C</p>
       <p>- Entorno de carga: 0-50°C</p>
@@ -160,7 +160,7 @@ El nodo solar está disponible en dos variantes: [SenseCAP Solar Node P1](https:
 
 
 
-### Descripción del hardware
+### Descripción general del hardware
 
 **Elementos interactivos**
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/interactive.png" alt="pir" width={800} height="auto" /></p>
@@ -168,7 +168,31 @@ El nodo solar está disponible en dos variantes: [SenseCAP Solar Node P1](https:
 **Accesorios**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/accessory.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/Instruction-solar-node.png" alt="pir" width={800} height="auto" /></p>
 
 **Diagrama**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/solar_node_diagram.png" alt="pir" width={800} height="auto" /></p>
+
+## Soporte técnico y debate sobre el producto
+
+<p style={{textAlign: 'center'}}>
+  <a href="https://www.facebook.com/groups/1755190828846458" target="_blank">
+    <img 
+      src="https://files.seeedstudio.com/wiki/SenseCAP/MeshTrackerX1/BannerQRCode_FBNew.jpg" 
+      border="0" 
+      style={{width: '90%', maxWidth: '800px', height: 'auto'}} 
+    />
+  </a>
+</p>
+
+<div style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>
+    <div className="button_tech_support_container" style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
+        <a href="https://forum.seeedstudio.com/" className="button_forum"></a>
+        <a href="https://www.seeedstudio.com/contacts" className="button_email"></a>
+    </div>
+    <div className="button_tech_support_container" style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
+        <a href="https://discord.gg/eWkprNDMU7" className="button_discord"></a>
+        <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" className="button_discussion"></a>
+    </div>
+</div>

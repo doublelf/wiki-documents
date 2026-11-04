@@ -12,7 +12,7 @@ last_update:
   date: 3/10/2026
   author: Michelle Huang
 createdAt: '2025-05-13'
-updatedAt: '2026-05-14'
+updatedAt: '2026-08-06'
 url: https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/
 ---
 
@@ -110,11 +110,11 @@ import TabItem from '@theme/TabItem';
 
 - Select the target device on the Bluetooth panel.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/connect-radio.png" alt="pir" width={300} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000e/device_select123.jpeg" alt="pir" width={300} height="auto" /></p>
 
 - Enter the code (the default code is `123456`) and then click `OK` to connect the device.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/pair1.png" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000e/pairing_code123.png" alt="pir" width={600} height="auto" /></p>
 
 </TabItem>
 
@@ -170,7 +170,7 @@ In order to start communicating over the mesh, you must set your region. This se
 <Tabs>
 <TabItem value="ios" label="iOS App">
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/set-region.png" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000e/configure_LoRa123.png" alt="pir" width={600} height="auto" /></p>
 
 </TabItem>
 
@@ -496,6 +496,30 @@ adafruit-nrfutil --verbose dfu serial --package xiao_nrf52840_ble_bootloader.zip
 
 When you have completed the above steps, follow this [step](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/#flash-firmware) to flash the application firmware.
 
+### Unable to Communicate on the Primary Channel
+
+If the device cannot communicate with nearby nodes or send messages, first check that the LoRa region and modem preset match the surrounding nodes. You should also check whether the default **PSK** has been changed. A different PSK on the primary channel will prevent the device from communicating with other nodes on that channel.
+
+The easiest way to find this issue is through the mobile app. Open the app, connect to the target device, then navigate to `Settings` -> `Channels`. Select the primary channel and check the **PSK** value. If it is different from the surrounding nodes, update it to the same PSK and save the channel settings.
+
+<Tabs>
+<TabItem value="ios" label="IOS App">
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/wio_tracker/communicate_problems_ios.png" alt="Check primary channel PSK in the iOS app" width={500} height="auto" /></p>
+
+</TabItem>
+
+<TabItem value="android" label="Android App">
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/wio_tracker/communicate_problem_and.png" alt="Check primary channel PSK in the Android app" width={900} height="auto" /></p>
+
+</TabItem>
+</Tabs>
+
+**Solution**
+
+If you are not sure which settings were changed, restore the device to its default settings by following the [Factory Reset](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/#factory-reset) guide. If only the PSK was changed, set it back to `AQ==`.
+
  ### Device automatically turns off
 
  #### Description
@@ -519,9 +543,13 @@ If you want to restore the default settings, you can perform a factory reset. Th
 - Click the `Factory Reset` button in the app. The device will automatically reboot with the factory configuration.
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/Factory.png" alt="pir" width={400} height="auto" /></p>
 
-### NodeDB Reset
+### Direct Message Fail
 
-NodeDB is the local database that stores information about nodes discovered in the current Mesh network, including:
+#### NodeDB Reset
+
+NodeDB is the local database that stores information about nodes discovered in the current Mesh network. If you encounter a situation where you can't communicate with a certain node, it might be because your nodedB has stored outdated information for that node. You will need to update it.
+
+NodeDB stores details such as:
 
 - **Node ID**
 - **User name**
@@ -529,39 +557,27 @@ NodeDB is the local database that stores information about nodes discovered in t
 - **Signal information (SNR)**
 - **Last seen time**
 
-**When to reset**
+Open the app and connect to the target device. Go to **Settings**->**Device**->**Device Config**->**Reset NodeDB**.
 
-Reset NodeDB when:
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000e/sending_failed123.png" alt="Device settings and Reset NodeDB button in the app" width={600} height="auto" /></p>
 
-- The node list contains outdated, duplicate, or invalid entries.
-- You move to a different Mesh environment and want to rediscover nearby nodes.
-- Node information in the app appears incorrect or incomplete.
+#### Exchange User Info
 
-:::danger
-Resetting NodeDB only clears the node database stored on the device. It **does not perform a factory reset** and **does not remove the device's basic configuration**.
+Each node will periodically send its own node information, enabling other nodes in the mesh to "see" and "recognize" it. Two nodes need to exchange their node information with each other in order to be able to communicate with each other. If you are unable to send or receive private messages with another node on the list, you can manually prompt them to exchange information in the app.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/USERINFO.png" alt="Device entry in Settings" width={300} height="auto" /></p>
+
+#### Regenerate Private Key
+
+Two nodes need to know their private key with each other in order to be able to communicate with each oher. If one node keeps failing in private message transmission, try regenerate the private key for it.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/RenerateKey.png" alt="Device entry in Settings" width={600} height="auto" /></p>
+
+Reboot the faulty device to make the configuration function.
+
+:::note
+After the key regeneration, other device needs to reconnect with the node. So it is better to delete the node in other device's node list.
 :::
-
-**Reset from the App**
-
-1. Open the app and connect to the target device.
-2. Go to **Settings**.
-3. Tap **Device**.
-4. Scroll to the bottom of the **Device Config** page and find **Reset NodeDB**.
-5. Tap it and confirm the action.
-
-**App Path**
-
-`Settings > Device > Reset NodeDB`
-
-**Example Screens**
-
-Step 1: Open **Device** from the **Settings** page.
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/wio_tracker/L1nodeDB3.png" alt="Device entry in Settings" width={300} height="auto" /></p>
-
-Step 2: Tap `Reset NodeDB` on the **Device Config** page.
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/wio_tracker/L1nodeDB4.png" alt="Reset NodeDB button in Device Config" width={300} height="auto" /></p>
 
 :::tip
 Please note the difference between the following options:
@@ -569,23 +585,6 @@ Please note the difference between the following options:
 - **Reset NodeDB**: Only clears the node database.
 - **Factory Reset**: Restores the device to factory settings and removes additional configuration data.
 :::
-
-**What happens after reset**
-
-After **Reset NodeDB** is executed, the device clears the currently stored node list. As the device continues running, it will rediscover and record nearby nodes again.
-
-You may observe the following:
-
-- The node list may temporarily become empty or smaller.
-- Nodes will gradually reappear as the device continues operating.
-- Previously stored historical node records will no longer be available.
-
-**Notes**
-
-- Before resetting, make sure the issue is actually related to an abnormal node list.
-- If the problem is only a delay in node display, wait for a while first to see whether it recovers automatically.
-- If the issue remains after resetting NodeDB, continue troubleshooting the device configuration or other possible causes.
-- Use **Factory Reset** carefully to avoid accidentally removing device configuration.
 
 ### Power Consumption
 
@@ -633,3 +632,26 @@ The Xiao nRF-52840 Plus maximum charging current is 200 mA. The CN3165 charging 
 
 ## Resource
 - [Solar Node Battery Life Calculation Table](https://files.seeedstudio.com/products/SenseCAP/Wio-Tracker/Solar%20Node%20Consumption%20Test%20and%20Battery%20Life%20Calculation.xlsx)
+
+## Tech Support & Product Discussion
+
+<p style={{textAlign: 'center'}}>
+  <a href="https://www.facebook.com/groups/1755190828846458" target="_blank">
+    <img 
+      src="https://files.seeedstudio.com/wiki/SenseCAP/MeshTrackerX1/BannerQRCode_FBNew.jpg" 
+      border="0" 
+      style={{width: '90%', maxWidth: '800px', height: 'auto'}} 
+    />
+  </a>
+</p>
+
+<div style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>
+    <div className="button_tech_support_container" style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
+        <a href="https://forum.seeedstudio.com/" className="button_forum"></a>
+        <a href="https://www.seeedstudio.com/contacts" className="button_email"></a>
+    </div>
+    <div className="button_tech_support_container" style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
+        <a href="https://discord.gg/eWkprNDMU7" className="button_discord"></a>
+        <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" className="button_discussion"></a>
+    </div>
+</div>

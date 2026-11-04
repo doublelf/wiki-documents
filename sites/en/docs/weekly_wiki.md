@@ -5,10 +5,10 @@ keywords:
   - weekly wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 05/25/2026
+  date: 08/24/2026
   author: Frank
 createdAt: '2022-12-20'
-updatedAt: '2026-05-25'
+updatedAt: '2026-08-24'
 ---
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/IndexWiki/logo.png" /></div>
 
@@ -18,45 +18,43 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is May 25th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is August 24th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Add Voice Interaction to Your SO-ARM10x with reSpeaker Flex](https://wiki.seeedstudio.com/respeaker_flex_soarm/)
+### [Build a Four-Camera Fisheye Surround View Demo on Jetson](https://wiki.seeedstudio.com/jetson_fisheye_surround_view_demo/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reSpeaker_flex/lerobot_flex.png" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Thor/jetson_fisheye_surround_view_demo_01.gif" alt="pir" width={800} height="auto" /></p>
 
 <div style={{ textAlign: "justify" }}>
 
-The LeRobot SO-ARM Voice Controller lets you control a SO-ARM100 robotic arm using natural voice commands powered by AI. The system combines wake word detection, Groq Whisper speech-to-text, LLaMA 3 language understanding, and Orpheus text-to-speech to create a fully interactive hands-free robotics experience. Built on top of the [LeRobot framework](https://github.com/huggingface/lerobot?utm_source=chatgpt.com), it runs on Ubuntu x86 systems and NVIDIA Jetson devices using a ReSpeaker USB microphone array for voice input. Users can create custom arm poses, gestures, and conversational triggers to build intelligent robotic interactions for research, education, and robotics development.
+This project shows a **four-camera fisheye surround-view system** on NVIDIA Jetson. Four fisheye cameras around the chassis are calibrated, undistorted, and stitched into a real-time **bird's-eye view (BEV)**.
 
 </div>
 
-### [Arduino Cookbook: Onboard Peripherals (reTerminal E Series)](https://wiki.seeedstudio.com/reterminal_e10xx_with_arduino_peripherals/)
+### [Get Started with SenseCAP Combo](https://wiki.seeedstudio.com/get_started_with_sensecap_combo/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/245.png" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Combo/combo-intro.png" alt="pir" width={800} height="auto" /></p>
 
 <div style={{ textAlign: "justify" }}>
 
-This page focuses on **driving the onboard hardware peripherals** of the reTerminal E Series with Arduino. If you want to render text, graphics, or images on the ePaper screen instead, head over to **[Arduino Cookbook: ePaper Display](https://wiki.seeedstudio.com/reterminal_e10xx_with_arduino)**.
+This document introduces how to get started with the SenseCAP Combo 5-in-1 Sensor with 4G, including SIM card and sensor installation, device configuration, SenseCAP Cloud connection, and data monitoring.
 
 </div>
 
-### [Control reBot Arm using voice with reSpeaker Flex](https://wiki.seeedstudio.com/control_rebot_arm_using_voice_with_respeaker_flex/)
-
-<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/i/m/img_v3_0210p_67d75fe6-a1fe-40a9-b025-ac92efb1bbbg_1.jpg" alt="pir" width={600} height="auto" /></p>
+### [Build a reCamera and NVIDIA Jetson VLM Event Gateway](https://wiki.seeedstudio.com/recamera_jetson_vlm_gateway/)
 
 <div style={{ textAlign: "justify" }}>
 
-This document will take you hand in hand from scratch to build a "listening and moving" intelligent robot arm system. Even if you have never touched the robotic arm or hardware development, as long as you follow the steps, you can successfully reproduce this project!
+This document introduces how to build a VLM event gateway using reCamera Basic and NVIDIA Jetson, combining YOLOv8 and Qwen3-VL for scene analysis, event alerts, and real-time video streaming.
 
 </div>
 
 <!-- ## Existing Wiki Updated
 
-### [Meshtastic Firmware Source Code Practical Tutorial](https://wiki.seeedstudio.com/meshtastic_source_code_practical_tutorial_solar_node/)
+### [NFC Usage on Seeed Studio XIAO nRF52840 (Sense)](https://wiki.seeedstudio.com/XIAO-BLE-Sense-NFC-Usage/)
 
-We have added a new project: [Project B – XIAO ESP32S3 Environmental Telemetry Node](https://wiki.seeedstudio.com/meshtastic_source_code_practical_tutorial_solar_node/#project-b-xiao-esp32s3-environmental-telemetry-node). -->
+We have updated the [NFC Usage on Seeed Studio XIAO nRF52840 (Sense)](https://wiki.seeedstudio.com/XIAO-BLE-Sense-NFC-Usage/) guide with the new XIAO_nRF52840_NFC library, expanded antenna tuning instructions, setup verification, and practical NFC tag examples. -->
 
 ## The Efforts of Contributor
 
@@ -190,5 +188,18 @@ By combining **Speech-to-Text (STT)**, **Text-to-Speech (TTS)**, and **Local Lar
 - [weekly wiki on 2026.4.27th](/Seeed_Elderly/weekly_wiki/2026/wiki260427)
 - [weekly wiki on 2026.5.11th](/Seeed_Elderly/weekly_wiki/2026/wiki260511)
 - [weekly wiki on 2026.5.18th](/Seeed_Elderly/weekly_wiki/2026/wiki260518)
+- [weekly wiki on 2026.5.25th](/Seeed_Elderly/weekly_wiki/2026/wiki260525)
+- [weekly wiki on 2026.6.01st](/Seeed_Elderly/weekly_wiki/2026/wiki260601)
+- [weekly wiki on 2026.6.08th](/Seeed_Elderly/weekly_wiki/2026/wiki260608)
+- [weekly wiki on 2026.6.15th](/Seeed_Elderly/weekly_wiki/2026/wiki260615)
+- [weekly wiki on 2026.6.22nd](/Seeed_Elderly/weekly_wiki/2026/wiki260622)
+- [weekly wiki on 2026.6.29th](/Seeed_Elderly/weekly_wiki/2026/wiki260629)
+- [weekly wiki on 2026.7.06th](/Seeed_Elderly/weekly_wiki/2026/wiki260706)
+- [weekly wiki on 2026.7.13th](/Seeed_Elderly/weekly_wiki/2026/wiki260713)
+- [weekly wiki on 2026.7.20th](/Seeed_Elderly/weekly_wiki/2026/wiki260720)
+- [weekly wiki on 2026.7.27th](/Seeed_Elderly/weekly_wiki/2026/wiki260727)
+- [weekly wiki on 2026.8.03rd](/Seeed_Elderly/weekly_wiki/2026/wiki260803)
+- [weekly wiki on 2026.8.10th](/Seeed_Elderly/weekly_wiki/2026/wiki260810)
+- [weekly wiki on 2026.8.17th](/Seeed_Elderly/weekly_wiki/2026/wiki260817)
 
 </details>

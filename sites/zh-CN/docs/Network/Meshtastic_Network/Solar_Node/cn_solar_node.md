@@ -1,5 +1,5 @@
 ---
-description: 面向 Meshtastic 与 LoRa 的 SenseCAP 太阳能节点
+description: 用于 Meshtastic 和 LoRa 的 SenseCAP 太阳能节点
 title: SenseCAP 太阳能节点介绍
 keywords:
   - Meshtastic
@@ -8,10 +8,10 @@ image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/solar-node.webp
 slug: /meshtastic_solar_node
 sidebar_position: 1
 last_update:
-  date: 3/10/2026
-  author: Michelle Huang
+  date: 08/06/2026
+  author: zxw
 createdAt: '2025-04-08'
-updatedAt: '2026-03-10'
+updatedAt: '2026-08-07'
 url: https://wiki.seeedstudio.com/cn/meshtastic_solar_node/
 ---
 
@@ -19,7 +19,7 @@ url: https://wiki.seeedstudio.com/cn/meshtastic_solar_node/
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/solar-node.png" alt="pir" width={800} height="auto" /></p>
 
-这是一款基于 [Meshtastic®](https://meshtastic.org/) 的经济型太阳能供电通信节点或中继器，集成了 XIAO nRF52840 Plus 主控制器和 Wio-SX1262 LoRa 模组。它专为无网络覆盖区域设计，支持远距离通信、精确定位和低功耗运行，适用于扩展户外区域的网络覆盖。
+这是一款基于 [Meshtastic®](https://meshtastic.org/) 的经济型太阳能供电通信节点或中继器，集成了 XIAO nRF52840 Plus 主控制器和 Wio-SX1262 LoRa 模块。它专为无网络覆盖区域设计，支持远距离通信、精确定位和低功耗运行，适用于扩展户外区域的网络覆盖。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html" target="_blank">
@@ -29,11 +29,11 @@ url: https://wiki.seeedstudio.com/cn/meshtastic_solar_node/
 
 ## 版本对比
 
-Solar Node 提供两个版本可选：[SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html) 和 [SenseCAP Solar Node P1-Pro](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html)。
+Solar Node 提供两个版本：[SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html) 和 [SenseCAP Solar Node P1-Pro](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html)。
 
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/wysiwyg/upload/image-114993633-1_1.jpeg" alt="pir" width={800} height="auto" /></p>
 
-## 概览
+## 概述
 
 ### 特性
 
@@ -52,7 +52,7 @@ Solar Node 提供两个版本可选：[SenseCAP Solar Node P1](https://www.seeed
     <td><b>Main Controller</b></td>
     <th>
       <a href="https://www.seeedstudio.com/Seeed-Studio-XIAO-nRF52840-Plus-p-6359.html" target="_blank">XIAO nRF52840 Plus</a><br />
-      (Nordic nRF52840，ARM® Cortex®-M4 32 位处理器，带 FPU，64 MHz，256KB RAM，1MB Flash，2MB 板载 Flash)
+      (Nordic nRF52840，带 FPU 的 ARM® Cortex®-M4 32 位处理器，64 MHz，256KB RAM，1MB Flash，2MB 板载 Flash)
     </th>
   </tr>
   <tr>
@@ -137,12 +137,12 @@ Solar Node 提供两个版本可选：[SenseCAP Solar Node P1](https://www.seeed
   </tr>
   <tr>
     <td><b>Waterproof rating</b></td>
-    <td>IPX5</td>
+    <td>IPX6</td>
   </tr>
   <tr>
     <td><b>Battery(for P1-Pro version)</b></td>
     <td>
-      <p>- 4 节 18650 锂电池（每节 3350mAh）</p>
+      <p>- 4 节 18650 锂电池（NMC，每节 3350mAh）</p>
       <p>- 支持 Type-C 和太阳能充电。</p>
       <p>- 放电环境：-40～60°C</p>
       <p>- 充电环境：0-50°C</p>
@@ -168,7 +168,31 @@ Solar Node 提供两个版本可选：[SenseCAP Solar Node P1](https://www.seeed
 **配件**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/accessory.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/Instruction-solar-node.png" alt="pir" width={800} height="auto" /></p>
 
 **结构示意图**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/solar_node_diagram.png" alt="pir" width={800} height="auto" /></p>
+
+## 技术支持与产品讨论
+
+<p style={{textAlign: 'center'}}>
+  <a href="https://www.facebook.com/groups/1755190828846458" target="_blank">
+    <img 
+      src="https://files.seeedstudio.com/wiki/SenseCAP/MeshTrackerX1/BannerQRCode_FBNew.jpg" 
+      border="0" 
+      style={{width: '90%', maxWidth: '800px', height: 'auto'}} 
+    />
+  </a>
+</p>
+
+<div style={{ display: "flex", flexDirection: "column", alignItems: "center", width: "100%" }}>
+    <div className="button_tech_support_container" style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
+        <a href="https://forum.seeedstudio.com/" className="button_forum"></a>
+        <a href="https://www.seeedstudio.com/contacts" className="button_email"></a>
+    </div>
+    <div className="button_tech_support_container" style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
+        <a href="https://discord.gg/eWkprNDMU7" className="button_discord"></a>
+        <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" className="button_discussion"></a>
+    </div>
+</div>

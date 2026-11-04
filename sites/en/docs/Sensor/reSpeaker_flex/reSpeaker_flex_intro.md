@@ -11,7 +11,7 @@ last_update:
   date: 03/26/2026
   author: Kasun Thushara
 createdAt: '2026-03-26'
-updatedAt: '2026-05-26'
+updatedAt: '2026-08-07'
 url: https://wiki.seeedstudio.com/respeaker_flex_introduction/
 ---
 # Getting Started with reSpeaker Flex
@@ -148,6 +148,9 @@ The system supports two interchangeable microphone array configurations: a **cir
 | **Interface** | FPC connector; cable can be routed from the side or rear |
 | **Mounting** | 2 × M3 mounting holes |
 
+
+
+
 ### XIAO ESP32S3 Support
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reSpeaker_flex/xiao_esp32s3.png" alt="pir" width={700} height="auto" /></p>
@@ -212,6 +215,11 @@ The FPC mic array interface is a 24-pin, 0.5mm pitch connector with a locking la
 
 ### Out of Box Usage
 
+:::note
+To ensure optimal voice pickup performance and proper operation of the audio algorithms, please make sure the Microphone Port (Mic Inlet / Sound Hole) on the back side of the device is facing toward the sound source. The microphone port is located on the side with the Seeed Studio logo printed on it. 
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reSpeaker_flex/array_mic_inlet.jpg" alt="pir" width={800} height="auto" /></p>
+:::
+
 #### Reset
 
 The reset (RST) button provides a hardware reset for the reSpeaker Flex when pressed, it restarts the chip and reinitializes the system from the very beginning, just like a full power cycle.
@@ -222,9 +230,19 @@ The reset (RST) button provides a hardware reset for the reSpeaker Flex when pre
 
 Here you can see how to connect speakers using either the 3.5mm AUX headphone jack or the onboard JST speaker interface, depending on your audio output preference.
 
+#### FPC Connection
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reSpeaker_flex/fpc-cable-orientation.png" alt="pir" width={600} height="auto" /></p>
+
+Before connecting the FPC cable, identify the contact side and stiffener side. When inserting the cable into the MIC Connector, make sure the exposed contacts are facing the metal contacts inside the connector, while the stiffener side faces outward.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reSpeaker_flex/fpc-cable-connection.png" alt="pir" width={600} height="auto" /></p>
+
+Open the locking tab on the MIC Connector, insert the FPC cable with the correct orientation, and close the tab to secure the connection.
+
 #### Safe Mode
 
-**Safe Mode** is a special recovery mode on the **reSpeaker Flex** that allows you to flash firmware via **USB DFU** or I2C for devices like the Raspberry Pi and **ESP32**.
+**Safe Mode** is a special recovery mode on the **reSpeaker Flex** that allows you to flash firmware via **USB DFU** or I2C for devices like  **ESP32**.
 
 If you've previously flashed the **I2S firmware** and want to switch back to the **USB firmware**, you can enter **Safe Mode** and reflash the USB firmware using **USB DFU**.
 
@@ -256,8 +274,7 @@ If you've previously flashed the **I2S firmware** and want to switch back to the
 - **Power off** the device completely.
 - **Press and hold the Boot button**.
 - While holding the **Boot button, reconnect the power.**
-- The **red LED will start blinking**, confirming that the device has entered **Safe Mode.**
-Now the device is running the **Safe Mode firmware stored in the Factory partition.**
+Use the DFU util command line tool to check the DFU partitions; see the **Install DFU Util** section below for more details.
 
 ### Update firmware
 
@@ -274,18 +291,16 @@ import TabItem from '@theme/TabItem';
 <TabItem value="USB" label="USB">
 
 The USB firmware is designed for use with host operating systems such as **Windows, Linux, and macOS** when communicating through the USB hardware interface.
-Two firmware variants are available: **respeaker_xvf3800_usb_dfu_firmware_v2.0.x.bin**, which provides 2-channel audio, and **respeaker_xvf3800_usb_dfu_firmware_6chl_v2.0.x.bin**, which provides 6-channel audio. Both firmware versions operate at a 16 kHz sampling rate with 32-bit depth.
-
 You can explore these firmware files in this link
 
 | Firmware                         | Channels | Notes                                                   |
 |----------------------------------|----------|---------------------------------------------------------|
 | respeaker_flex_ua-io16-6ch-cir.bin | 6 Channels | 16 kHz, 6 channels using circular mic array             |
 | respeaker_flex_ua-io16-6ch-lin.bin | 6 Channels | 16 kHz, 6 channels using linear mic array               |
-| respeaker_flex_ua-io16-cir.bin     | 2 Channels | 16 kHz, stereo output using circular mic array          |
-| respeaker_flex_ua-io16-lin.bin     | 2 Channels | 16 kHz, stereo output using linear mic array            |
-| respeaker_flex_ua-io48-cir.bin     | 2 Channels | 48 kHz, stereo output using circular mic array          |
-| respeaker_flex_ua-io48-lin.bin     | 2 Channels | 48 kHz, stereo output using linear mic array            |
+| respeaker_flex_ua-io16-cir.bin     | 2 Channels | 16 kHz, 2 channels output using circular mic array          |
+| respeaker_flex_ua-io16-lin.bin     | 2 Channels | 16 kHz, 2 channels output using linear mic array            |
+| respeaker_flex_ua-io48-cir.bin     | 2 Channels | 48 kHz, 2 channels output using circular mic array          |
+| respeaker_flex_ua-io48-lin.bin     | 2 Channels | 48 kHz, 2 channels output using linear mic array            |
 
 Connect the reSpeaker Flex to your PC via the USB cable. Note that you need to use the XMOS USB-C port(close to RST Button) to flash XMOS’s firmware.
 
@@ -708,11 +723,12 @@ Open the start menu and type Device manager. Find  related reSpeaker Flex device
 
 ## Resources
 
-[reSpeaker Flex XVF3800 Circular step file](https://files.seeedstudio.com/wiki/reSpeaker_flex/reSpeaker_xvf3800_flex_circular_260210.step)
-
-[reSpeaker Flex XVF3800 Linear step file](https://files.seeedstudio.com/wiki/reSpeaker_flex/reSpeaker_xvf3800_flex_linear.step)
-
-[reSpeaker Flex XVF3800 Core Board Step](https://files.seeedstudio.com/wiki/reSpeaker_flex/reSpeaker_xvf3800_flex_Separate.step)
+- [reSpeaker Flex XVF3800 Circular 2D File](https://files.seeedstudio.com/wiki/reSpeaker_flex/reSpeaker_xvf3800_flex_circular_2d.dxf)
+- [reSpeaker Flex XVF3800 Linear 2D File](https://files.seeedstudio.com/wiki/reSpeaker_flex/reSpeaker_xvf3800_flex_linear_2d.dxf)
+- [reSpeaker Flex XVF3800 Core Board 2D File](https://files.seeedstudio.com/wiki/reSpeaker_flex/reSpeaker_xvf3800_flex_Separate_2d.dxf)
+- [reSpeaker Flex XVF3800 Circular 3D File](https://files.seeedstudio.com/wiki/reSpeaker_flex/reSpeaker_xvf3800_flex_circular_260210.step)
+- [reSpeaker Flex XVF3800 Linear 3D File](https://files.seeedstudio.com/wiki/reSpeaker_flex/reSpeaker_xvf3800_flex_linear.step)
+- [reSpeaker Flex XVF3800 Core Board 3D File](https://files.seeedstudio.com/wiki/reSpeaker_flex/reSpeaker_xvf3800_flex_Separate.step)
 
 
 
